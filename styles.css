@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Welcome Container */
+.welcome-container {
+    margin-top: 50px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Heading */
+h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Form Labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+/* Form Input Fields */
+input, select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Flex Layout for Input Groups */
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Input Fields in Flex Layout */
+.input-group input {
+    flex: 1;
+}
+
+/* Dropdown Styling */
+#priority {
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Priority Levels */
+.critical {
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    animation: pulse 1.5s infinite;
+}
+
+.high {
+    color: white;
+    background-color: orange;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.low {
+    color: white;
+    background-color: green;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Pulse Animation for Critical Priority */
+@keyframes pulse {
+    0% { box-shadow: 0 0 10px rgba(255, 0, 0, 0.7); }
+    50% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.9); }
+    100% { box-shadow: 0 0 10px rgba(255, 0, 0, 0.7); }
+}
+
+/* Warnings */
+.warning {
+    color: red;
+    font-weight: bold;
+}
+
+.delayed {
+    color: orange;
+    font-weight: bold;
+}
+
+/* Overlapping Alert */
+.overlapping {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Buttons Section */
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* General Button Styles */
+.btn {
+    padding: 15px 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Ambulance Button */
+.ambulance-btn {
+    background-color: #28a745;
+}
+
+.ambulance-btn:hover {
+    background-color: #218838;
+}
+
+/* Police Button */
+.police-btn {
+    background-color: #007bff;
+}
+
+.police-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .btn {
+        width: 90%;
+    }
+
+    .container, .welcome-container {
+        width: 95%;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+}
