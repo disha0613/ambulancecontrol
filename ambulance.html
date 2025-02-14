@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambulance Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Register Ambulance</h1>
+        <label>License Plate:</label>
+        <input type="text" id="licensePlate" required>
+        
+        <label>Driver Name:</label>
+        <input type="text" id="driverName" required>
+        
+        <label>From:</label>
+        <input type="text" id="fromLocation" required>
+        
+        <label>Via:</label>
+        <input type="text" id="ViaLocation" required>
+
+        <label>To:</label>
+        <input type="text" id="toLocation" required>
+        
+        <label>Priority:</label>
+        <select id="priority">
+            <option value="Critical">🚨 Critical</option>
+            <option value="High">⚠ High</option>
+            <option value="Low">✅ Low</option>
+        </select>
+        
+        <button onclick="registerAmbulance()">Register</button>
+    </div>
+</body>
+</html>
